@@ -64,6 +64,25 @@ namespace Practica03
         {
             return this.Pais;
         }
-
+        public void ChangeCalle(string newCalle)
+        {
+            this.Calle = newCalle;
+        }
+        public void ChangePoblacion(string newPoblacion)
+        {
+            this.Poblacion = newPoblacion;
+        }
+        public void ChangeProvincia(string newProvincia)
+        {
+            this.Provincia = newProvincia;
+        }
+        public void ChangeCodigoPostal(int newCodigoPostal)
+        {
+            this.CodigoPostal = newCodigoPostal;
+        }
+        public void ChangePais(string newPais)
+        {
+            this.Pais = newPais;
+        }
     }
 }

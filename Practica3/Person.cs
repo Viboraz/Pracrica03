@@ -41,8 +41,6 @@ namespace Practica03
 
             return true;
         }
-
-
         public int GetAge()
         {
             return this.age;

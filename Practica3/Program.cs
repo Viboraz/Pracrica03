@@ -1,66 +1,47 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Practica03
+namespace Practica03    
 {
-    class Person
+    class Program
     {
-        // four fields:
-        private string name;
-        private int age;
-        private int height;
-        private int weight;
-
-        // Constructor that takes two argument:
-        public Person(string name, int age)
+        static void Main(string[] args)
         {
-            this.name = name;
-            this.age = age;
-            this.weight = 0;
-            this.height = 0;
-        }
+            Console.WriteLine("Hello to CSharp Classes and Objects!");
 
-        // methods, getters and setters:
-        public void printPerson()
-        {
-            Console.WriteLine(this.name + " I am " + this.age + " years old");
-        }
+            var tony = new Person("Tony", 24);
+            var john = new Person("John", 42);
+            var elsa = new Person("Elsa", 26);
 
-        public void becomeOlder()
-        {
-            this.age++;
-        }
+            tony.printPerson();
+            john.printPerson();
+            elsa.printPerson();
 
-        public bool adult()
-        {
-            if (this.age < 18)
+
+            Console.WriteLine("Exemple becomeOlder");
+            elsa.becomeOlder();
+            elsa.printPerson();
+
+            john.becomeOlder();
+
+
+            for (int i = 0; i <= 10; i = i + 1)
             {
-                return false;
+                Console.WriteLine("Exemple becomeOlder inside for, " + i + " : tony is becoming older one year");
+                tony.becomeOlder();
+            }
+            tony.printPerson();
+
+            Person[] people = { tony, john, elsa };
+
+            Console.WriteLine("Exemple foreach");
+            foreach (Person p in people)
+            {
+
+                p.printPerson();
             }
 
-            return true;
-        }
-
-
-        public int GetAge()
-        {
-            return this.age;
-        }
-
-        public void SetAge(int age)
-        {
-            this.age = age;
-        }
-
-        public String getName()
-        {
-            return this.name;
-        }
-
-        public void settName(string name)
-        {
-            this.name = name;
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }

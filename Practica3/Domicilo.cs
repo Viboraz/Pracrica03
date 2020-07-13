@@ -14,7 +14,7 @@ namespace Practica03
         private string Pais;
 
         // Constructor that takes two argument:
-        public Person(string Calle, tring Calle, tring Calle, tring Calle, int CodigoPostal)
+        public Person(string Calle, string Poblacion, string Provincia, string Provincia, int CodigoPostal)
         {
             this.name = name;
             this.age = age;

@@ -24,8 +24,46 @@ namespace Practica03
         }
 
         // methods, getters and setters:
-       
+        public void SetCalle(string Calle)
+        {
+            this.Calle = Calle;
+        }
+        public void SetPoblacion(string Poblacion)
+        {
+            this.Poblacion = Poblacion;
+        }
+        public void SetProvincia(string Provincia)
+        {
+            this.Provincia = Provincia;
+        }
+        public void SetCodigoPostal(int CodigoPostal)
+        {
+            this.CodigoPostal = CodigoPostal;
+        }
+        public void SetPais(string Pais)
+        {
+            this.Pais = Pais;
+        }
+        public string GetCalle()
+        {
+            return this.Calle;
+        }
+        public string GetPoblacion()
+        {
+            return this.Poblacion;
+        }
+        public string GetProvincia()
+        {
+            return this.Provincia;
+        }
+        public int GetCodigoPostal()
+        {
+            return this.CodigoPostal;
+        }
+        public string GetPais()
+        {
+            return this.Pais;
+        }
 
-       
     }
 }
